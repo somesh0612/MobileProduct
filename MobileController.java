@@ -8,16 +8,19 @@ public class MobileController {
 		Scanner scn=new Scanner(System.in);
 		System.out.println("                                       Swagat Hai Aapka !!                                               ");
 		System.out.println("------------------------------------------------------------------------------------");
-		Mobile []mob=new Mobile[6];
-		mob[0]=new Mobile("Doogee","V Max",6.58,22000,52500);
+		System.out.println("Enter the quantity of the Product");
+		int n=scn.nextInt();
+		Mobile []mob=new Mobile[n];
+	/*	mob[0]=new Mobile("Doogee","V Max",6.58,22000,52500);
 		mob[1]=new Mobile("Samsung ","Galaxy M34 256GB",6.5,6000,20999);
 		mob[2]=new Mobile("Apple","15 Pro Max 256GB",6.7,4422,159900);
 		mob[3]=new Mobile("Apple ","14 128GB white",6.1,3279,56999);
 		mob[4]=new Mobile("Apple ","14 128GB blue",6.1,3279,56999);
 	 	mob[5]=new Mobile("Samsung ","Galaxy M34 256GB",6.5,6000,20999);
-	/*	for(int i=0;i<mob.length;i++) {
+         */ 
+		for(int i=0;i<mob.length;i++) {
 			System.out.println("Enter the Details of Mobile No : "+(i+1));
-			System.out.println("Brand :");
+			System.out.println("Brand :"); scn.nextLine();
 			String brand=scn.nextLine();
 			System.out.println("Model :");
 			String model=scn.nextLine();
@@ -29,7 +32,7 @@ public class MobileController {
 			double price=scn.nextDouble(); scn.nextLine();
 			
 			mob[i]=new Mobile(brand,model,screenSize,battery,price);
-		} */
+		} 
 		int choice;
 		do {
 			System.out.println("--------------------------------------------------------------------------");
